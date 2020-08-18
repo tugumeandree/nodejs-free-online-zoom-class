@@ -4,9 +4,10 @@ import { makeStyles } from '@material-ui/core/styles';
 import Toolbar from '@material-ui/core/Toolbar';
 import IconButton from '@material-ui/core/IconButton';
 import Typography from '@material-ui/core/Typography';
-import Link from '@material-ui/core/Link';
 import MenuIcon from '@material-ui/icons/Menu';
-
+import {
+  Link
+} from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
   toolbar: {
@@ -50,12 +51,13 @@ export default function Header(props) {
       </Toolbar>
       <Toolbar component="nav" variant="dense" className={classes.toolbarSecondary}>
         {sections.map((section) => (
+         
           <Link
             color="inherit"
             noWrap
             key={section.title}
             variant="body2"
-            href={section.url}
+            to={section.url}
             className={classes.toolbarLink}
           >
             {section.title}

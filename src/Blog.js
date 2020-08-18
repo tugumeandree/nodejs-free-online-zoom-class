@@ -13,6 +13,7 @@ import Footer from './Footer';
 
 
 
+
 const md = `
 # Preparation Module 1
 
@@ -68,7 +69,7 @@ const sidebar = {
     { title: 'Advanced Javascript', url: 'https://drive.google.com/file/d/13vrqDtYQQ75XW9We0zxuVm4H2F9KymFP/view?usp=sharing' },
   ],
   modules: [
-    { title: 'Module2', url: 'module2' },
+    { title: 'Module2', url: '/module2' },
     { title: 'Module3', url: '/module3' },
   ],
   social: [
